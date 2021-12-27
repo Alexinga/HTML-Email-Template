@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight HTML Email Template</title>
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            background: #cccccc;
+            /* display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center; */
+        }
+        img{
+            width: 50%;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            margin: 0 5rem;
+        }
+        #container ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        #banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5rem;
+        }
+        #banner img {
+            width: 100%;
+        }
+        #info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5rem;
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: steelblue 3px solid;
+        }
+        #info p {
+            font-weight: 500;
+        }
+        .main-color {
+            color: steelblue;
+        }
+        .btn-info {
+            color: white;
+            background: steelblue;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+        #service {
+            background: white;
+            margin: 0 5rem;
+            padding: 2rem;
+            display: flex;
+            gap: 1rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-bottom: steelblue 3px solid;
+        }
+        #design {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            margin: 0 5rem;
+            gap: 1rem;
+        }
+        #design img {
+            width: 40%;
+            padding: 4rem 2rem;
+        }
+        .design-info {
+            padding: 1rem;
+        }
+        #footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            margin: 0 5rem;
+        }
+        #footer img {
+            width: 30%;
+        }
+        #footer div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer div img{
+            width: 5%;
+        }
+        .sub {
+            padding-bottom: 2rem;
+        }
+        .top {
+            padding-top: 2rem;
+        }
+        @media(max-width: 674px) {
+            #container, #service, #design{
+                flex-direction: column;
+            }
+            #design {
+                text-align: center;
+                gap: 0;
+                padding: 1rem;
+            }
+            .design-info {
+                padding: 0;
+            }
+            #design img {
+            width: 50%;
+            padding:0;
+            }
+            #service img {
+                width: 30%;
+            }
+        }
+        @media(max-width: 674px) {
+            #container, #banner, #info, #service, #design, #footer {
+                margin: 0 1rem;
+            }
+            #footer div img {
+                width: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="container">
+        <img class="insight" src="./img/insight.png" alt="insight logo">
+        <ul>
+            <li>
+                <img src="./img/circle-facebook.png">
+            </li>
+            <li>
+                <img src="./img/circle-twitter.png">
+            </li>
+            <li>
+                <img src="./img/circle-youtube.png">
+            </li>
+            <li>
+                <img src="./img/circle-instagram.png">
+            </li>
+            <li>
+                <img src="./img/circle-linkedin.png">
+            </li>
+        </ul>
+    </header>
+    <section id="banner">
+        <img src="./img/banner.jpg">
+    </section>
+    <section id="info">
+        <h2>HTML EMAIL TEMPLATE <span class="main-color">COURSE</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores at laudantium magni quod porro. Culpa itaque labore in, vitae magnam sapiente quibusdam doloremque quo laboriosam possimus maiores sit consequatur perferendis. Ratione esse odio consectetur? Sequi neque reprehenderit impedit corporis!</p>
+        <button class="btn-info">View Course</button>
+    </section>
+    <section id="service">
+        <div class="box">
+            <img src="./img/ecommerce.jpg">
+            <h2>Ecommerce</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quae!</p>
+        </div>
+        <div class="box">
+            <img src="./img/web-design.jpg">
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quae!</p>
+        </div>
+        <div class="box">
+            <img src="./img/email-design.jpg">
+            <h2>HTML Email</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quae!</p>
+        </div>
+    </section>
+    <section id="design">
+        <img src="./img/palette.jpg">
+        <div class="design-info">
+            <h2>Create Custom Designs</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quaerat animi sequi aliquid alias, voluptatibus itaque?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut tenetur dolores fugiat.</p>
+            <btn class="btn-info">Read More</btn>
+        </div>
+    </section>
+    <section id="footer">
+        <img class="top" src="./img/insight-white.png">
+        <h3>Insight HTML Email</h3>
+        <h3>123 Street Road, State 55555</h3>
+        <div>
+            <img src="./img/white-facebook.png">
+            <img src="./img/white-instagram.png">
+            <img src="./img/white-linkedin.png">
+            <img src="./img/white-twitter.png">
+            <img src="./img/white-youtube.png">
+        </div>
+        <h3 class="sub">SUBSCRIBE</h3>
+    </section>
+</body>
+</html>
